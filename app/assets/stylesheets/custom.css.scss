@@ -1,4 +1,4 @@
-$navbar-default-bg: #312312;
+$navbar-default-bg: #f98f48;
 $light-orange: #ff8c00;
 $navbar-default-color: $light-orange;
 
@@ -26,6 +26,9 @@ $navbar-default-color: $light-orange;
 
 body {
 	padding-top: 80px;
+}
+.btn-warning {
+	background-color: #08d0c1;
 }
 
 .nav_item {
@@ -66,4 +69,27 @@ h2 {
 	margin-top: 25px;
 	border-top: 1px solid #EAEAEA;
 	color: #777;
+}
+
+.chef_info {
+	margin-top: 12px;
+}
+
+.gravatar {
+	border-radius: 8px;
+}
+
+.well {
+	background-color: #EDEDED;
+}
+
+input, textarea, select, .uneditable-input {
+	border: 1px solid #D2D2D2;
+	border-radius: 5px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+input {
+	height: auto !important;
 }
