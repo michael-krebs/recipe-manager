@@ -1,5 +1,10 @@
 class StylesController < ApplicationController
 
+  def show
+    @style = Style.find(params[:id])
+    @recipes = @style.recipes.paginate(page: params[:page], per_page: 4)
+  end
+
   def new
     @style = Style.new
   end
@@ -12,9 +17,6 @@ class StylesController < ApplicationController
     else
       render 'new'
     end
-  end
-
-  def show
   end
 
   private
